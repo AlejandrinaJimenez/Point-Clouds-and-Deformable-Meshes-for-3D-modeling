@@ -32,24 +32,29 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 ### Background
 #### 3D modeling and its applications
 Basically, the main goal of 3D reconstructon is to obtain the geometric properties of a scene by processing and combining visual cues from a set of views(like in the image below). We can recover infromation about the surface, poses, illumination, and others, but for this project we will just focus on surfaces. 
+
 ![classical](Classical_1.png)
 
 
 There are a lot of applications which may benefit from 3d reconstruction algorithms as shown in this graph. 
-![applications](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/blob/main/applications.png)
+
+![applications](applications.png)
 
 For example, it can help with visual navegation systems to generate data for self driving cars. Companies are trying to create rich and complex 3D simulated environments that will cover all possible scenarios on the road. However, it still has its challenges because it is not easy to learn all of the different types of unpredictable and extraordinary scenarios in the long tail. 
-![drive](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/blob/main/self_driving.png)
+
+![drive](self_driving.png)
 
 #### Classical Geometric Methods for 3D modeling
 1. Multiview Geometry:
 This is the classical pipeline based on geometry. First we need to detect some features in the input images, then we extract some descriptors on those images and match them, for example using RANSAC or a similar robust matching algorithm. With these correspondences we can triangulate them and know where the points are in 3D. After we have our triangulation, we need to refine the approximated 3D positions, using a nonlinear optimization called Bundle Adjustment, this will help us refine the 3D positions. Finally, we end up with a point cloud which is the point representation of a 3D shape or object. This process is represented in the following figure: 
-![multi](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/blob/main/multiview.png)
+
+![multi](multiview.png)
+
 2. Multiview Stereo:
 In this method we strart with a point cloud densification, basically if we have a set of images and sparse correspondences, we find the correspondences on images an then triangulate. 
 The next step is mesh reconstruction for estimating a mesh surface that explains best the input point-cloud, we also perform mesh refinement for recovering all fine details. Finally, mainly for visualization purposes, mesh texturing is performed for computing a sharp and accurate texture to color the mesh.
 
-![stereo](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/blob/main/stereo.png)
+![stereo](stereo.png)
 
 ### Jekyll Themes
 
