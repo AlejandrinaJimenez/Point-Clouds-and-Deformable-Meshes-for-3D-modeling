@@ -118,7 +118,65 @@ Lamp:
 ### Implementation of Point2Mesh
 The results of this implementation are much better, however it takes a while to generate the final results.
 1: Convex Hull mesh:
+
 Initial Mesh for Giraffe Point Cloud:
+![giraffemesh](initialmesh.png)
+
+Mesh after 100 Iterations:
+![hundred](cien.png)
+
+Mesh after 1000 Iterations:
+![mil](mil.png)
+
+Mesh after 3000 Iterations:
+![tresmil](tresmil.png)
+
+Mesh after 6000 Iterations:
+![seismil](seismil.png)
+
+
+2. Spherical Mesh: We can tart from a general spherical initial mesh to avoid the need to create initial meshes that have some similarity with the target point cloud.
+The resulting mesh looks like the target shape, however, is not very accurate and possibly needs more iterations before upsampling is performed.
+![esfera](esfera.png)
+
+
+3. Downsampled initial point cloud: This method also can construct a decent surface using a down- sampled point clouds.
+
+![downsample](downsampled.png)
+
+
+### Challenges
+* The results for the first implementation were not very good and I could not insert those point clouds in the Point2Mesh pipeline.
+* The time to obtain a good mesh is very long due to the number of iterations.
+* Need a GPU to run faster.
+
+## Demo and Video to the presentation
+### Demo
+I added a jupyter notebook that can be deployed in colab, and making use of the provided GPU it is possible to generate meshes for some other objects: [Jupyter Notebook Demo](https://drive.google.com/file/d/1qlLD3rNTqGY5jy34XuAoTDpOLRjWR758/view?usp=sharing)
+
+### Video of the presentation
+[Project presentation](https://youtu.be/Qm87Xg1ll6c)
+
+## Conclusions and References
+
+It was very interesting to implement these two papers, I was able to advance my knowledge about Geometric Deeplearning and learn about how to generate point clouds and meshes. 
+It would be interesting to see how the results of the concatenation of both papers look and how to deploy them in a website that supports Deep Learning pipelines. 
+
+### References
+* [3D Machine Learning Repository](https://github.com/timzhang642/3D-Machine-Learning)
+* [Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images](https://openaccess.thecvf.com/content_ECCV_2018/papers/Nanyang_Wang_Pixel2Mesh_Generating_3D_ECCV_2018_paper.pdf)
+* [PIFuHD: Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human
+Digitization](https://shunsukesaito.github.io/PIFuHD/)
+* [MeshCNN in PyTorch](https://github.com/ranahanocka/MeshCNN)
+* [Point2Mesh: A Self-Prior for Deformable Meshes](https://arxiv.org/pdf/2005.11084.pdf)
+* [Gmsh: A three-dimensional finite element mesh generator with built-in pre- andpost-processing facilities](https://gmsh.info/)
+ 
+
+
+
+
+
+
 
 
 
