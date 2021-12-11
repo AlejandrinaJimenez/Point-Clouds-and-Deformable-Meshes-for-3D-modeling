@@ -100,8 +100,26 @@ The initial mesh is a coarse approximation of the point cloud. If the object has
 ![mesh3](inputoutput.png)
 
 ## Results
-### PointOutNet
+### Implementation of PointOutNet
 The results obtained for this paper were not as good as expected, as we can apreciate from the pictures, the general structure of the image remains but it is not very clear. 
+
+Car: 
+
+![car](car.png)
+
+Chair:
+
+![chair](chair.png)
+
+Lamp:
+
+![lamp](lamp.png)
+
+### Implementation of Point2Mesh
+The results of this implementation are much better, however it takes a while to generate the final results.
+1: Convex Hull mesh:
+Initial Mesh for Giraffe Point Cloud:
+
 
 
 <!-- Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file. -->
