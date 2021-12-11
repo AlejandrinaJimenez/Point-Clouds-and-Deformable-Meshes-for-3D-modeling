@@ -33,7 +33,7 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 #### 3D modeling and its applications
 Basically, the main goal of 3D reconstructon is to obtain the geometric properties of a scene by processing and combining visual cues from a set of views(like in the image below). We can recover infromation about the surface, poses, illumination, and others, but for this project we will just focus on surfaces. 
 
-![classical](Classical_1.png)
+![classical](Point-Clouds-and-Deformable-Meshes-for-3D-modeling/blob/main/Classical_1.png)
 
 
 There are a lot of applications which may benefit from 3d reconstruction algorithms as shown in this graph. 
