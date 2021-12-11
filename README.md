@@ -119,17 +119,22 @@ Lamp:
 The results of this implementation are much better, however it takes a while to generate the final results.
 1: Convex Hull mesh:
 
+
 Initial Mesh for Giraffe Point Cloud:
 ![giraffemesh](initialmesh.png)
+
 
 Mesh after 100 Iterations:
 ![hundred](cien.png)
 
+
 Mesh after 1000 Iterations:
 ![mil](mil.png)
 
+
 Mesh after 3000 Iterations:
 ![tresmil](tresmil.png)
+
 
 Mesh after 6000 Iterations:
 ![seismil](seismil.png)
@@ -137,12 +142,13 @@ Mesh after 6000 Iterations:
 
 2. Spherical Mesh: We can tart from a general spherical initial mesh to avoid the need to create initial meshes that have some similarity with the target point cloud.
 The resulting mesh looks like the target shape, however, is not very accurate and possibly needs more iterations before upsampling is performed.
+
 ![esfera](esfera.png)
 
 
 3. Downsampled initial point cloud: This method also can construct a decent surface using a down- sampled point clouds.
 
-![downsample](downsampled.png)
+![downsample](downsamp.png)
 
 
 ### Challenges
@@ -181,9 +187,3 @@ Digitization](https://shunsukesaito.github.io/PIFuHD/)
 
 
 <!-- Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AlejandrinaJimenez/Point-Clouds-and-Deformable-Meshes-for-3D-modeling/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file. -->
-
-
-
-### Support or Contact
-
-Having trouble with Pages? Check out our or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
