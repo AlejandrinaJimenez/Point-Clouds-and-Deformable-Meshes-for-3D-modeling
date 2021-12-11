@@ -121,22 +121,27 @@ The results of this implementation are much better, however it takes a while to 
 
 
 Initial Mesh for Giraffe Point Cloud:
+
 ![giraffemesh](initialmesh.png)
 
 
 Mesh after 100 Iterations:
+
 ![hundred](cien.png)
 
 
 Mesh after 1000 Iterations:
+
 ![mil](mil.png)
 
 
 Mesh after 3000 Iterations:
+
 ![tresmil](tresmil.png)
 
 
 Mesh after 6000 Iterations:
+
 ![seismil](seismil.png)
 
 
